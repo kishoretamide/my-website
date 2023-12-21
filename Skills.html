@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+         body{
+        background-color: rgb(19, 17, 17);
+        margin: 0px;
+        padding: 0px;
+    }
+    .Navbar{
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.833);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .active{
+        background-color: rgb(144, 132, 132);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    .links{
+        display: flex;
+    }
+    .links a{
+        position: relative;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    .links a::before,
+    .links a::after {
+        content: '';
+        width: 0;
+        position: absolute;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.4s;
+
+    }
+
+    .links a::before {
+    top: 0;
+    right: 0;
+    }
+
+    .links a::after {
+    bottom: 0;
+    left: 0;
+    right:0;
+    }
+
+    .links a:hover::before,
+    .links a:hover::after {
+    width: 70%;
+    }
+    .Navbar h1{
+        color: wheat;
+    }
+    .logo h1:hover{
+        transition: 3s;
+        transform: rotate(360deg);
+    }
+    .Navbar a{
+        color: rgba(245, 245, 245, 0.763);
+        margin: 0px 10px;
+    }
+    .links a:hover{
+        color: skyblue;
+    }
+    .all{
+        width: 80%;
+        margin-top: 3px;
+        margin-left:10%;
+        margin-right: 1%;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .image{
+        margin: 1px;
+        height: 300px;
+        width: 330px;
+    }
+    img{
+        margin: 10px;
+    }
+    img:hover{
+        height: 120px;
+        width: 120px;
+    }
+    .image img{
+        border-radius: 19%;
+    }
+    h3{
+        text-align: center;
+        color: orange;
+    }
+    p{
+        margin: 10px;
+        color: wheat;
+    }
+    h2{
+        color: whitesmoke;
+        text-align: center;
+    }
+    h2:hover{
+        color: aquamarine;
+    }
+    </style>
+</head>
+<body>
+    <div class="Navbar">
+        <div class="logo">
+            <h1>K</h1>
+        </div>
+        <div class="links">
+            <a href="indexx.html">Home</a>
+            <a class="active" href="#">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+
+    <h2>ⓂY  ⓈKILLS</h2>
+
+
+    <div class="all">
+    <div class="box">
+        <div class="image">
+            <img src="d:\Downloads\mywebsite images\sql2.webp" alt="" height="100px" width="100px">
+            <h3>SQL</h3>
+            <p>SQL (Structured Query Language) is a domain-specific language used for managing and manipulating relational databases, allowing users to query, insert, update, and delete data.</p>
+        </div>
+    </div>
+
+
+
+    <div class="box">
+        <div class="image">
+            <img src="d:\Downloads\mywebsite images\java image.jpeg" alt="" height="100px" width="100px">
+            <h3>JAVA</h3>
+            <p>Java is an object-oriented, high-performance programming language known for its portability and wide usage in various application domains.</p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="image">
+            <img src="d:\Downloads\mywebsite images\html.jpeg" alt="" height="100px" width="100px">
+            <h3>HTML & CSS</h3>
+            <p>Together, HTML and CSS form the fundamental building blocks of web design, enabling the creation of visually appealing and well-structured websites.</p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="image">
+            <img src="d:\Downloads\mywebsite images\javascript.webp" alt="" height="100px" width="100px">
+            <h3>JAVASCRIPT</h3>
+            <p>JavaScript is a scripting language that enhances web interactivity, allowing developers to create dynamic content, manipulate the Document Object Model (DOM), and respond to user actions on websites.</p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="image">
+            <img src="d:\Downloads\mywebsite images\AWS.jpeg" alt="" height="100px" width="100px">
+            <h3>AWS</h3>
+            <p>AWS is a leading cloud platform, providing diverse services for scalable computing, storage, and various other functionalities, empowering businesses with flexible and efficient cloud solutions.</p>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="image">
+            <img src="d:\Downloads\mywebsite images\j2ee2.webp" alt="" height="100px" width="100px">
+            <h3>J2EE</h3>
+            <p>Java EE, now Jakarta EE, is a framework for developing enterprise-level applications in Java, providing standardized APIs. It simplifies the creation of scalable and distributed software solutions for businesses.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+
+body{
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    background-color: rgb(19, 17, 17);
+    margin: 0px;
+    padding: 0px;
+    }
+    .Navbar{
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.833);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo h1:hover{
+        transition: 3s;
+        transform: rotate(360deg);
+    }
+    .active{
+        background-color: rgb(144, 132, 132);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    .links{
+        display: flex;
+    }
+    .links a{
+        position: relative;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    .links a::before,
+    .links a::after {
+        content: '';
+        width: 0;
+        position: absolute;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.4s;
+
+    }
+
+    .links a::before {
+    top: 0;
+    right: 0;
+    }
+
+    .links a::after {
+    bottom: 0;
+    left: 0;
+    right:0;
+    }
+
+    .links a:hover::before,
+    .links a:hover::after {
+    width: 70%;
+    }
+    .Navbar h1{
+        color: wheat;
+    }
+    .Navbar a{
+        color: rgba(245, 245, 245, 0.763);
+        margin: 0px 10px;
+    }
+    .links a:hover{
+        color: skyblue;
+    }
+        
+        
+        /* body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        } */
+
+        #container {
+            margin-left: 17%;
+
+            justify-content: center;
+            background-color: #211f1f9f;
+            box-shadow: 0 0 10px rgba(158, 153, 57, 0.629);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        h1 {
+            color: silver;
+        }
+
+        p {
+            color: silver;
+        }
+
+        img {
+            border-radius: 50%;
+            max-width: 159px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-top: 30px;
+            text-align: left;
+            position: relative;
+            transition: transform 0.3s;
+            margin-bottom: 60px; /* Increased space between sections */
+        }
+
+        .section h3 {
+            color: #aca5a595;
+            cursor: pointer;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section h3::after {
+            color: rgba(255, 200, 0, 0.69);
+            content: " >";
+            display: inline-block;
+            transition: transform 0.3s;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+        }
+
+        .section p {
+            color: #555;
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+            font-size: 14px;
+        }
+
+        .section:hover {
+            transform: translateY(-10px); /* Lift the section on hover */
+        }
+
+        .section:hover p {
+            display: block;
+            font-size: 16px;
+        }
+
+        .section:hover h3::after {
+            transform: rotate(2deg);
+            content: " ∨";
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="Navbar">
+        <div class="logo">
+            <h1>K</h1>
+        </div>
+        <div class="links">
+            <a href="indexx.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a class="active"href="#">About</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+
+
+    <div id="container">
+        <img src="d:\kishore allpics\bangalore\banglorepalace\IMG-20230704-WA0003.jpg" alt="Your Name" height="150px" width="300px">
+        <h1>About Me</h1>
+        <p>Intrested as a Web Developer | Designer | Enthusiast</p>
+        <p>Hello,i'm kishore,I'm passionate about creating beautiful and functional websites. Here, you can see more about me and my personal infromation.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/comm/in/kishore-tamide-3a95a1234?midToken=AQEwxvXy-eCh2Q&midSig=0b2TuY85ZSSaA1&trk=eml-email_learning_job_alerts_01-header-8-profile&trkEmail=eml-email_learning_job_alerts_01-header-8-profile-null-g7z5rl%7Eld90lv3j%7E2c-null-neptune%2Fprofile%7Evanity%2Eview&lipi=urn%3Ali%3Apage%3Aemail_email_learning_job_alerts_01%3BA2%2BJOtUTSFC5anyG78B8CQ%3D%3D" target="_blank">LinkedIn</a> or follow me on <a href="https://mobile.twitter.com/Kishoretamide" target="_blank">Twitter</a>.</p>
+
+        <div class="section">
+            <h3>➣Hobbies</h3>
+            <p>☢I enjoy spending my free time on playing cricket,chess,reading books,watching movies. Exploring new way to create web designing.</p>
+        </div>
+
+        <div class="section">
+            <h3>➣Favorite Cricketer</h3>
+            <p>☢My favorite cricketer is Ms Dhoi. I admire his wicket keeping skills, sportsmanship, and dedication to the game.</p>
+        </div>
+
+        <div class="section">
+            <h3>➣Favorite Actor</h3>
+            <p>☢One of my favorite actors is Ramcharan. His performances always leave a lasting impression, and I appreciate their versatility in different roles and his personification.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+

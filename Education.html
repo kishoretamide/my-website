@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-color: rgb(19, 17, 17);
+            margin: 30px 0px;
+        }
+
+        .Navbar {
+            z-index: 1;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.833);
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: sticky;
+            top: 0;
+        }
+        .logo h1:hover{
+        transition: 3s;
+        transform: rotate(360deg);
+    }
+
+        .links {
+            display: flex;
+        }
+
+        .links a {
+            position: relative;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+
+        .links a::before,
+        .links a::after {
+            content: '';
+            width: 0;
+            position: absolute;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.4s;
+
+        }
+
+        .links a::before {
+            top: 0;
+            right: 0;
+        }
+
+        .links a::after {
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .links a:hover::before,
+        .links a:hover::after {
+            width: 70%;
+        }
+
+        .Navbar h1 {
+            color: wheat;
+        }
+
+        .Navbar a {
+            color: rgba(245, 245, 245, 0.763);
+            margin: 0px 10px;
+        }
+
+        .links a:hover {
+            color: skyblue;
+        }
+
+        .active {
+            background-color: rgb(144, 132, 132);
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+
+        .slider-container {
+            margin-top: 2%;
+            position: relative;
+            width: 65%;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .moving-div {
+            padding: 20px;
+            border-radius: 20px;
+            width: 500px;
+            height: 230px;
+            position: relative;
+            top: 48%;
+            left: -500px;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: black;
+            background: linear-gradient(to right, #a3aeb7, #297fb9cc);
+            opacity: 0;
+            animation: slideRight 1s forwards;
+            /* Adjust the animation duration based on your preference */
+        }
+
+        @keyframes slideRight {
+            to {
+                left: 10%;
+                opacity: 1;
+            }
+        }
+        .alinks{
+            color: rgb(181, 32, 32);
+            text-decoration: none;
+        }
+        .alinks:hover{
+            color: red;
+        }
+        p:hover{
+            color: rgb(233, 215, 16);
+        }
+        .slider-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+
+
+
+
+
+        .slider-container2 {
+            margin-top: 3%;
+            position: relative;
+            width: 79%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .moving-div2 {
+            padding: 30px;
+            border-radius: 20px;
+            width: 500px;
+            height: 230px;
+            position: absolute;
+            top: 50%;
+            left: -600px;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: black;
+            background: linear-gradient(to right, #a3aeb7,rgba(255, 192, 203, 0.714));
+            opacity: 0;
+            animation: slideRight2 1s forwards;
+            /* Adjust the animation duration based on your preference */
+        }
+
+        @keyframes slideRight2 {
+            to {
+                left: 25%;
+                opacity: 1;
+            }
+        }
+        .alinks{
+            color: rgb(181, 32, 32);
+            text-decoration: none;
+        }
+        .alinks:hover{
+            color: red;
+        }
+        p:hover{
+            color: rgb(233, 215, 16);
+        }
+        .slider-container2{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .img2{
+            margin-left: 265%;
+        }
+
+
+
+
+
+
+
+
+        .slider-container3 {
+            margin-top: 3%;
+            position: relative;
+            width: 98%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .moving-div3 {
+            padding: 30px;
+            border-radius: 20px;
+            width: 500px;
+            height: 230px;
+            position: absolute;
+            top: 50%;
+            left: -800px;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: black;
+            background: linear-gradient(to right, #a3aeb7, rgba(0, 255, 255, 0.704));
+            opacity: 0;
+            animation: slideRight3 1s forwards;
+            /* Adjust the animation duration based on your preference */
+        }
+
+        @keyframes slideRight3 {
+            to {
+                left: 38%;
+                opacity: 1;
+            }
+        }
+        .alinks{
+            color: rgb(181, 32, 32);
+            text-decoration: none;
+        }
+        .alinks:hover{
+            color: red;
+        }
+        p:hover{
+            color: rgb(233, 215, 16);
+        }
+        .slider-container3{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .img3{
+            margin-left: 340%;
+        }
+       
+        
+
+
+      .circle {
+        margin-left: 70%;
+        top: 8%;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 136, 0, 0.845);
+        border-radius: 48%;
+        position: absolute;
+        animation: moveUpDown 1s linear infinite alternate;
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(100);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+
+
+
+
+    .circle1 {
+        margin-left: 85%;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 255, 60, 0.725);
+        border-radius: 48%;
+        position: absolute;
+        animation: moveUpDown 1s linear infinite alternate;
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(80px);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .circlea {
+        margin-left: 120px;
+        top: 55%;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(0, 255, 60, 0.725);
+        border-radius: 48%;
+        position: absolute;
+        animation: moveUpDown 1s linear infinite alternate;
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(100);
+      }
+      100% {
+        transform: translateY(600px);
+      }
+    }
+
+
+
+
+    .circle1a {
+        margin-left: 380px;
+        top: 100%;
+        width: 60px;
+        height: 60px;
+        background-color:rgba(255, 136, 0, 0.845);
+        border-radius: 48%;
+        position: absolute;
+        animation: moveUpDown 1s linear infinite alternate;
+    }
+
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(100);
+      }
+      100% {
+        transform: translateY(300px);
+      }
+    }
+
+
+
+    .img img{
+        border-radius: 8%;
+    }
+
+
+    .img2{
+        border-radius: 8%;
+    }
+
+
+    .img3{
+        border-radius: 8%;
+    }
+
+    h3:hover{
+        color: rgb(158, 28, 149);
+    }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="Navbar">
+        <div class="logo">
+            <h1>K</h1>
+        </div>
+        <div class="links">
+            <a href="indexx.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="#" class="active">Education</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="moving-div">
+            <h3>SCHOOL></h3>
+            <p>✎Obtained an 8.3CGPA in my SSC and pursued matriculation at Sri Saraswathi Vidyanikethan High School in
+                Anantapur, Andhrapradesh.I've spent ten years here, and during that time, I've made incredible memories.
+            For more <a href="https://www.google.com/maps/place/Sri+Saraswathi+Vidyanikethan+(EM)+Highschool+(ssvn)/@14.6849207,77.5760466,17z/data=!3m1!4b1!4m6!3m5!1s0x3bb14ab0aee70a99:0x29c93252336e350f!8m2!3d14.6849207!4d77.5786215!16s%2Fg%2F11g6yy1zlq?entry=ttu" class="alinks">CLICK HERE☚</a>
+            </p>
+        </div>
+        <div class="img">
+            <img src="d:\Downloads\mywebsite images\schoolimg.jpg" alt="network issue" height="265px" width="330px">
+        </div>
+    </div>
+
+
+
+
+    <div class="slider-container2">
+        <div class="moving-div2">
+            <h3>INTERMEDIATE></h3>
+            <p>✎I obtained an 8.62 CGPA while pursuing my intermediate education at Sri Chaitanya Junior College in Anantapur, Andhrapradesh.
+            For more <a href="https://www.google.com/maps/place/Sri+Chaitanya+Junior+College/@14.6785517,77.5947432,17.47z/data=!4m6!3m5!1s0x3bb14b59ae032723:0xd77253935444c929!8m2!3d14.6779358!4d77.5981092!16s%2Fg%2F11f5lyn95f?entry=ttu" class="alinks">CLICK HERE☚</a>
+
+            </p>
+        </div>
+        <div>
+            <img src="d:\Downloads\mywebsite images\sri-chaitanya-junior-college.jpg" alt="network issue" height="290px" width="330px" class="img2">
+        </div>
+    </div>
+
+
+
+
+    <div class="slider-container3">
+        <div class="moving-div3">
+            <h3>GRADUATION></h3>
+            <p>✎I completed my undergraduate studies at Sri Saibaba National Degree College specialized in BSc Electronics & got 8.68 in Anantapur, Andhrapradesh.
+            For more <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDY1MjBKN882YPTiKS5OylNIzs_JSU1PBQB1Mgis&q=ssbn+college&oq=&gs_lcrp=EgZjaHJvbWUqCQgGEC4YJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQLhgnGOoCMgkIBxAjGCcY6gLSAQk3Mjk0M2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8" class="alinks">CLICK HERE☚</a>
+
+            </p>
+        </div>
+        <div>
+            <img src="d:\Downloads\mywebsite images\ssbn college.jpeg" alt="network issue" height="290px" width="336px" class="img3">
+        </div>
+    </div>
+
+
+
+    <div class="circle"></div>
+    <div class="circle1"></div>
+    <div class="circlea"></div>
+    <div class="circle1a"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-smoke</title>
+    <style>
+    body{
+        background-color: rgb(19, 17, 17);
+        margin: 0px;
+        padding: 0px;
+    }
+    .Navbar{
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.833);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .active{
+        background-color: rgb(144, 132, 132);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    .links{
+        display: flex;
+    }
+    .links a{
+        position: relative;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    .links a::before,
+    .links a::after {
+        content: '';
+        width: 0;
+        position: absolute;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.4s;
+
+    }
+
+    .links a::before {
+    top: 0;
+    right: 0;
+    }
+
+    .links a::after {
+    bottom: 0;
+    left: 0;
+    right:0;
+    }
+
+    .links a:hover::before,
+    .links a:hover::after {
+    width: 70%;
+    }
+    .Navbar h1{
+        color: wheat;
+    }
+    .logo h1:hover{
+        transition: 3s;
+        transform: rotate(360deg);
+
+    }
+    
+    .Navbar a{
+        color: rgba(245, 245, 245, 0.763);
+        margin: 0px 10px;
+    }
+    .links a:hover{
+        color: skyblue;
+    }
+    .body{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    h4{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    .paragraph{
+        margin-top: 170px;
+        margin: 0 20px;
+        padding: 20px;
+        height: 200px;
+        width: 500px;
+    }
+    .image{
+        margin-top: 70px;
+    }
+    .image img{
+        border-radius: 2%;
+    }
+    .pass{
+        font-size: 25px;
+    }
+    .container{
+        width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icon{
+        margin-top: 10px;
+        padding: 20px;
+    }
+    
+</style>
+</head>
+<body>
+<div class="Navbar">
+    <div class="logo">
+        <h1>K</h1>
+    </div>
+    <div class="links">
+        <a class="active" href="#">Home</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Education.html">Education</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="body">
+    <div class="paragraph">
+        <h4>Hi,It's Me</h4>
+        <p class="pass"><span style="color: red;"></span>I'am <span style="color: orange;">kishore</span>"</p>
+        <p>I'm intrested in Web Developing,present iam looking for a job oppurtunity,learning java full stack Developer in Bangalore.</p>
+        <div class="container">
+            <div class="social-icon">
+              <a href="https://www.facebook.com/tamide.sreenivasulu.73"><img src="d:\Downloads\facebook.png"width="30" height="30"/></a>
+              </a>
+            </div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/comm/in/kishore-tamide-3a95a1234?midToken=AQEwxvXy-eCh2Q&midSig=0b2TuY85ZSSaA1&trk=eml-email_learning_job_alerts_01-header-8-profile&trkEmail=eml-email_learning_job_alerts_01-header-8-profile-null-g7z5rl%7Eld90lv3j%7E2c-null-neptune%2Fprofile%7Evanity%2Eview&lipi=urn%3Ali%3Apage%3Aemail_email_learning_job_alerts_01%3BA2%2BJOtUTSFC5anyG78B8CQ%3D%3D"><img src="d:\Downloads\linkdin.png" width="30" height="30"></a>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://mobile.twitter.com/Kishoretamide"><img src="d:\Downloads\twitter.png" width="30" height="30"></a>
+              </a>
+            </div>
+            <div class="social-icon">
+              <a href="https://github.com/tamidekishore/mywebpage"><img src="d:\Downloads\github3.png" width="30" height="30"></a>
+              </a>
+            </div>
+        </div>
+    </div>
+    <div class="image">
+        <img src="d:\Downloads\tuxpi.com.1700939462.jpg" alt="" height="480px" width="400">
+    </div>
+</div>
+</body>
+</html>

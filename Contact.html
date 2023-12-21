@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cbVp6APUqLe+16XzMbLlXuS3pxcYGskl98R6io+5XxCq31/Wtvm4ihWq1l+9/cuSOdEJ56JKU7FtmShFntrF6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .Navbar{
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.833);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo h1:hover{
+        transition: 3s;
+        transform: rotate(360deg);
+    }
+    .active{
+        background-color: rgb(144, 132, 132);
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    .links{
+        display: flex;
+    }
+    .links a{
+        position: relative;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    .links a::before,
+    .links a::after {
+        content: '';
+        width: 0;
+        position: absolute;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.4s;
+
+    }
+
+    .links a::before {
+    top: 0;
+    right: 0;
+    }
+
+    .links a::after {
+    bottom: 0;
+    left: 0;
+    right:0;
+    }
+
+    .links a:hover::before,
+    .links a:hover::after {
+    width: 70%;
+    }
+    .Navbar h1{
+        color: wheat;
+    }
+    .Navbar a{
+        color: rgba(245, 245, 245, 0.763);
+        margin: 0px 10px;
+    }
+    .links a:hover{
+        color: skyblue;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(19, 17, 17);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      color: #333;
+    }
+
+    section p {
+      line-height: 1.6;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .contact-info div {
+      flex: 1;
+      margin: 10;
+      padding: 18px;
+      background-color: #211d1d1a;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.647);
+      height: 120px;
+    }
+
+    .contact-info div h3 {
+      color: #333;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #15cc36;
+      text-decoration: none;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+    <div class="Navbar">
+        <div class="logo">
+            <h1>K</h1>
+        </div>
+        <div class="links">
+            <a href="indexx.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="About.html">About</a>
+            <a class="active" href="#">Contact</a>
+        </div>
+    </div>
+
+
+  <section>
+    <h2>Contact Information:</h2>
+    <div class="contact-info">
+      <div>
+        <h3>Phone</h3>
+        <p>☎+91 6309695195</p>
+      </div>
+      <div>
+        <h3>Email</h3>
+        <p>✉tamidekishore7@gmail.com</p>
+      </div>
+      <div>
+        <h3>Address</h3>
+        <p>🏠kalyandurg Road 2nd cross Anantapur, India</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Location:</h2>
+    <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.5363647721524!2d77.57859797487083!3d14.682233175073293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb14ab9a5a0bc61%3A0x54d37c2481ce4673!2s6-1-21%2C%20Vidyaranya%20Nagar%2C%20Rudrampeta%2C%20Ananthapur%2C%20Anantapur%2C%20Andhra%20Pradesh%20515004!5e0!3m2!1sen!2sin!4v1702230303653!5m2!1sen!2sin"
+          width="100%"
+          height="590px"
+          style="border:2;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    <!-- Replace the above div with your map embed code -->
+  </section>
+
+  <footer>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/kishoretamide/" target="_blank" title="Instagram">Instagram<i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/tamide.sreenivasulu.73" target="_blank" title="Facebook">Facebook<i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Kishoretamide" target="_blank" title="Twitter">Twitter<i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/kishore-tamide-3a95a1234/?midToken=AQEwxvXy-eCh2Q&midSig=0b2TuY85ZSSaA1&trk=eml-email_learning_job_alerts_01-header-8-profile&trkEmail=eml-email_learning_job_alerts_01-header-8-profile-null-g7z5rl%7Eld90lv3j%7E2c-null-neptune%2Fprofile%7Evanity%2Eview target="_blank" title="LinkedIn">LinkedIn<i class="fab fa-linkedin"></i></a>
+      <a href="https://www.naukri.com/mnjuser/homepage" target="_blank" title="Naukri">Naukri<i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/tamidekishore/mywebpage" target="_blank" title="Github">Github<i class="fab fa-facebook"></i></a>
+
+    </div>
+    <p>&copy; 2023 Tamide Kishore. All rights reserved.</p>
+  </footer>
+
+  <!-- Add your Google Maps API script here for the location section -->
+  <!-- Example: <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+  <script src="https://www.google.com/maps/place/6-1-21,+Vidyaranya+Nagar,+Rudrampeta,+Ananthapur,+Anantapur,+Andhra+Pradesh+515004/@14.6822453,77.5811993,19z/data=!4m6!3m5!1s0x3bb14ab9a5a0bc61:0x54d37c2481ce4673!8m2!3d14.682228!4d77.5811729!16s%2Fg%2F11qm19qvq6?entry=ttu" crossorigin="anonymous"></script>
+</body>
+</html>
